@@ -28,3 +28,17 @@ for person in people:
         print(f"Thank you for taking the poll, {person.title()}!")
     else:
         print(f"{person.title()}, please take the poll!")
+
+
+
+#Practice
+
+names = ['Colden', 'John', 'Brandon', 'Jane', 'Jen', 'Sarah', 'Edward', 'Phil']
+
+for name in names:
+    if name.lower() in favorite_languages.keys():
+        print(f"Thank you for taking the poll, {name.title()}!")
+    else:
+        print(f"{name.title()}, please take the poll!")
+
+        
