@@ -1,44 +1,30 @@
-#6-5 Rivers
-rivers = {'nile': 'egypt', 'amazon': 'brazil', 'yangtze': 'china'}
-for river, country in rivers.items():
-    print(f"The {river.title()} runs through {country.title()}.")
-print("\nRivers:")
-for river in rivers.keys():
-    print(f"- {river.title()}")
-print("\nCountries:")
-for country in rivers.values():
-    print(f"- {country.title()}")
-
-    
+import random
 
 
-#6-6 Polling
+color_list = ['red', 'green', 'purple', 'black', 'orange', 'yellow', 'light blue']
+speed_list = ['super slow', 'very slow', 'slow', 'slow fast', 'fast', 'very fast', 'super fast']
+#Make 30 green aliens
+aliens = []
 
-favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'rust',
-    'phil': 'python',
-}    
+for alien_number in range(30):
+    color = random.choice(color_list)
+    point = random.randint(5,50)
+    speed = random.choice(speed_list)
+    new_alien = {'color': color,
+                 'point': point, 
+                 'speed': speed}
+    aliens.append(new_alien)
 
-people = ['jen', 'sarah', 'edward', 'phil', 'colden', 'john', 'brandon', 'jane']
+ 
+for alien in aliens[:5]:
+    print(alien)
 
-for person in people:
-    if person in favorite_languages.keys():
-        print(f"Thank you for taking the poll, {person.title()}!")
-    else:
-        print(f"{person.title()}, please take the poll!")
+print(f'Total number of aliens: {len(aliens)}')
 
 
 
-#Practice
 
-names = ['Colden', 'John', 'Brandon', 'Jane', 'Jen', 'Sarah', 'Edward', 'Phil']
 
-for name in names:
-    if name.lower() in favorite_languages.keys():
-        print(f"Thank you for taking the poll, {name.title()}!")
-    else:
-        print(f"{name.title()}, please take the poll!")
+
 
         

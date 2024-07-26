@@ -71,3 +71,4 @@ if __name__ == "__main__":
     root = tk.Tk()  # Create the main window
     Calculator(root)  # Create an instance of the Calculator class
     root.mainloop()  # Run the Tkinter main loop
+    
